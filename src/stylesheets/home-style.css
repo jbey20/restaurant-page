@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html { 
   background: url(/src/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -10,17 +14,40 @@ html {
   height: 100vh;
   width: 100vw;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-list {
-  /* display: flex;
-  width: 100vw;
-  justify-content: space-around; */
-  list-style: none;
+main {
+  margin-top: 20vh;
+  background: rgba(0, 0, 0, 0.377);
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1% 2% 1% 2%;
+}
+
+main h1 {
+  font-size: 50px;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+main p {
+  font-size: 20px;
 }
 
 /*#region Header Styling */
-* {box-sizing: border-box;}
+
 
 body { 
   margin: 0;
@@ -30,7 +57,10 @@ body {
 .header {
   overflow: hidden;
   background-color: #414141;
-  padding: 20px 10px;
+  width: 100vw;
+  padding-right: 1%;
+  top: 0;
+  position: fixed;
 }
 
 .header a {
@@ -45,9 +75,10 @@ body {
 }
 
 .header a.logo {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   font-family: cursive;
+  margin: 20px 0px 10px 5px;
 }
 
 .header a:hover {
