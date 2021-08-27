@@ -17,6 +17,7 @@ const loadPage = () => {
   item0.textContent = `Truffoni's`;
   const item1 = document.createElement('a');
   item1.textContent = 'Home';
+  item1.setAttribute('id', 'home');
   item1.classList.add('active');
   const item2 = document.createElement('a');
   item2.textContent = 'Menu';

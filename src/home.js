@@ -7,7 +7,7 @@ const loadHome = () => {
   const subtitle = document.createElement('h2');
   subtitle.textContent = 'Home of the original Sloppy Steak!';
   const copy = document.createElement('p');
-  copy.textContent = "If you USED to be a piece of s@#!, you'll love it here!";
+  // copy.textContent = "If you USED to be a piece of s@#!, you'll love it here!";
   
   content.appendChild(main);
   main.appendChild(title);

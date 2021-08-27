@@ -1,0 +1,16 @@
+#menu {
+  margin-top: 20vh;
+  background: rgba(0, 0, 0, 0.377);
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1% 2% 1% 2%;
+}
+
+.right {
+  text-align:right!important
+}
