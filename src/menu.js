@@ -1,11 +1,5 @@
 const loadMenu = () => {
   const content = document.getElementById('content');
-
-  // const title = document.createElement('h1');
-  // title.classList.add('w3-center');
-  // title.textContent = 'Menu';
-  // title.setAttribute('id', 'menu-title');
-  // content.appendChild(title);
   content.innerHTML = `
   <div id="menu" class="">
     <h1 class="menu-title">THE MENU</h1>

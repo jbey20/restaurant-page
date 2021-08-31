@@ -2,7 +2,10 @@ import {loadPage} from './page-load';
 import {loadHome} from './home';
 import './stylesheets/home-style.css'
 import './stylesheets/menu.css'
+import './stylesheets/reservation.css'
 import { loadMenu } from './menu';
+import {loadReservation} from './reservation';
+
 
 loadPage();
 loadHome();
@@ -26,6 +29,8 @@ document.querySelectorAll('.header-list-item').forEach(item => {
     }
     else if (e.target.textContent == 'Make a Reservation') {
       e.target.classList.add('active');
+      removeAllChildNodes(content);
+      loadReservation();
     }
     else if (e.target.textContent == 'Menu') {
       e.target.classList.add('active');
