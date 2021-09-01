@@ -40,8 +40,19 @@ document.querySelectorAll('.header-list-item').forEach(item => {
   });
 });
 
+document.querySelector('.header-list').addEventListener('click', showNavbar());
+
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
+  }
+};
+
+function showNavbar() {
+  const x = document.querySelector(".header-list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 };

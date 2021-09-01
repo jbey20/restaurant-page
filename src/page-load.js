@@ -35,6 +35,11 @@ const loadPage = () => {
     eval(`navList.appendChild(item${i})`);
   };
 
+  header.innerHTML += `
+    <a href="javascript:void(0);" class="icon">
+    <i class="fa fa-bars"></i>
+    `
+
   const content = document.getElementById('content');
 };
 

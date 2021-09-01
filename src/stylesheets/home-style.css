@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
 html { 
   background: url(/src/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -10,7 +17,10 @@ html {
   background-size: cover;
 }
 
+
+
 #content {
+  margin-top: 5%;
   height: 100vh;
   width: 100vw;
   color: white;
@@ -20,7 +30,7 @@ html {
 }
 
 main {
-  margin-top: 20vh;
+  margin-top: 5%;
   background: rgba(0, 0, 0, 0.377);
   width: fit-content;
   height: fit-content;
@@ -34,7 +44,7 @@ main {
 
 main h1 {
   font-size: 50px;
-  margin-top: 3%;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -48,12 +58,6 @@ main p {
 
 /*#region Header Styling */
 
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .header {
   overflow: hidden;
   background-color: #414141;
@@ -61,6 +65,7 @@ body {
   padding-right: 1%;
   top: 0;
   position: fixed;
+  
 }
 
 .header a {
@@ -95,17 +100,51 @@ body {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
 
 
 /*#endregion*/
+
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: scroll;
+  }
+
+  .header {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .header a.logo {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0px;
+    width: fit-content;
+  }
+
+  .header .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-list-item {
+    display: none;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  main {
+    width: 95vw;
+    align-items: center;
+  }
+
+  iframe {
+    width: 95%;
+  }
+}
