@@ -3,7 +3,7 @@ import {loadHome} from './home';
 import './stylesheets/home-style.css'
 import './stylesheets/menu.css'
 import './stylesheets/reservation.css'
-import { loadMenu } from './menu';
+import {loadMenu} from './menu';
 import {loadReservation} from './reservation';
 
 
@@ -40,7 +40,9 @@ document.querySelectorAll('.header-list-item').forEach(item => {
   });
 });
 
-document.querySelector('.header-list').addEventListener('click', showNavbar());
+const bars = document.querySelector('.hamburger');
+console.log(bars);
+bars.addEventListener('click', showNavbar);
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
@@ -49,10 +51,11 @@ function removeAllChildNodes(parent) {
 };
 
 function showNavbar() {
+  console.log('showing');
   const x = document.querySelector(".header-list");
-  if (x.style.display === "block") {
+  if (x.style.display === "flex") {
     x.style.display = "none";
   } else {
-    x.style.display = "block";
+    x.style.display = "flex";
   }
 };

@@ -36,7 +36,7 @@ const loadPage = () => {
   };
 
   header.innerHTML += `
-    <a href="javascript:void(0);" class="icon">
+    <a href="javascript:void(0);" class="icon hamburger">
     <i class="fa fa-bars"></i>
     `
 

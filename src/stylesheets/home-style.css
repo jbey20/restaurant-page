@@ -64,8 +64,7 @@ main p {
   width: 100vw;
   padding-right: 1%;
   top: 0;
-  position: fixed;
-  
+  position: sticky;
 }
 
 .header a {
@@ -110,10 +109,10 @@ main p {
   }
 
   .header {
-    position: relative;
+    position: sticky;
     width: 100vw;
-    overflow: hidden;
     padding: 0;
+    height: fit-content;
   }
 
   .header a.logo {
@@ -131,8 +130,16 @@ main p {
     top: 0;
   }
 
-  .header-list-item {
+  .header-list {
     display: none;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .header-list-item {
+    display: block;
+    margin: 0;
   }
 
   .header-right {
