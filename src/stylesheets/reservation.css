@@ -2,6 +2,7 @@
 .content{ 
   align-self: center;
   justify-self: center;
+  margin-top: 5vh;
 }
 
 form {

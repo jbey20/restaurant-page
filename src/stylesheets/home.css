@@ -22,7 +22,7 @@ html {
 
 
 #content {
-  margin-top: 5%;
+  margin-top: 5vh;
   height: 100vh;
   width: 100vw;
   color: white;
@@ -41,6 +41,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+}
+
+#main-home {
   padding: 1% 2% 1% 2%;
 }
 

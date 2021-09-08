@@ -2,6 +2,7 @@ const loadHome = () => {
   const content = document.getElementById('content');
   
   const main = document.createElement('main');
+  main.setAttribute('id', 'main-home');
   const title = document.createElement('h1');
   title.textContent = "Truffoni's Steakhouse";
   const subtitle = document.createElement('h2');
