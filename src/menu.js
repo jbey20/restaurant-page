@@ -34,7 +34,7 @@ const loadMenu = () => {
       
       <h1><b>Cobb</b> <span class="right">$7.50</span></h1>
       <span id="entrees"></span>
-      <p class="">Garden salad with tomato, crisp bacon, frid chicken breast, eggs, avocado, chives, blue cheese, and red-wine vinaigrette.</p>
+      <p class="">Garden salad with tomato, crisp bacon, fried chicken breast, eggs, avocado, chives, blue cheese, and red-wine vinaigrette.</p>
       <hr>
     
     <h1 class="section-title">Entrees</h1>
