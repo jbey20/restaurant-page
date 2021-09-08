@@ -41,7 +41,7 @@
   padding: 2%;
   color: white;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 5vh;
   font-family: 'Tangerine', cursive;
 }
 
@@ -73,5 +73,11 @@ body {
   overflow-y: scroll;
 }
 
+
+@media only screen and (max-width: 300px) {
+  .menu-section {
+    display: none;
+  }
+}
 
 
