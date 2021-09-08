@@ -2,8 +2,7 @@ const loadPage = () => {
   const head = document.head;
   const style = document.createElement('link');
   head.appendChild(style);
-  // style.rel = 'stylesheet';
-  // style.href = "../restuarant-page/src/stylesheets/home-style.css";
+  
   const body = document.querySelector('body');
   
   const header = document.querySelector('header');

@@ -1,8 +1,9 @@
 import {loadPage} from './page-load';
 import {loadHome} from './home';
-import './stylesheets/home-style.css'
-import './stylesheets/menu.css'
-import './stylesheets/reservation.css'
+import './stylesheets/home.css';
+import './stylesheets/menu.css';
+import './stylesheets/reservation.css';
+import './stylesheets/fonts.css';
 import {loadMenu} from './menu';
 import {loadReservation} from './reservation';
 
@@ -59,3 +60,5 @@ function showNavbar() {
     x.style.display = "flex";
   }
 };
+
+export {removeAllChildNodes};

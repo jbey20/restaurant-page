@@ -15,6 +15,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
+  height: fit-content;
 }
 
 
@@ -43,17 +45,24 @@ main {
 }
 
 main h1 {
-  font-size: 50px;
-  margin-top: 0;
+  font-family: 'Tangerine', cursive;
+  font-size: 3.5em;
+  margin-top: 5%;
   margin-bottom: 0;
 }
 
 main h2 {
-  font-size: 28px;
+  font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 main p {
   font-size: 20px;
+}
+
+iframe {
+  border-radius: 20px; 
+  margin-bottom: 5%;
 }
 
 /*#region Header Styling */
@@ -65,6 +74,11 @@ main p {
   padding-right: 1%;
   top: 0;
   position: sticky;
+  z-index: 2;
+}
+
+.icon {
+  display: none;
 }
 
 .header a {
@@ -79,9 +93,9 @@ main p {
 }
 
 .header a.logo {
-  font-size: 35px;
+  font-size: 2.5em;
   font-weight: bold;
-  font-family: cursive;
+  font-family: 'Tangerine', cursive;
   margin: 20px 0px 10px 5px;
 }
 
@@ -103,7 +117,7 @@ main p {
 
 /*#endregion*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   body {
     overflow: scroll;
   }
@@ -133,8 +147,10 @@ main p {
   .header-list {
     display: none;
     flex-direction: column;
+    align-items: stretch;
     height: fit-content;
     width: 100%;
+    padding-inline-start: 0;
   }
 
   .header-list-item {
