@@ -47,7 +47,7 @@ main {
 main h1 {
   font-family: 'Tangerine', cursive;
   font-size: 3.5em;
-  margin-top: 5%;
+  margin-top: 1%;
   margin-bottom: 0;
 }
 
@@ -62,7 +62,7 @@ main p {
 
 iframe {
   border-radius: 20px; 
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 /*#region Header Styling */
