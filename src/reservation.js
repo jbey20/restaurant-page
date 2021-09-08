@@ -22,9 +22,6 @@ const loadReservation = () => {
       </form>
     </body> 
   `
-  const html = document.querySelector('html');
-  html.style.overflow = "hidden";
-
   const submit = document.getElementById('submit');
   submit.addEventListener('click', () => {
   removeAllChildNodes(content);

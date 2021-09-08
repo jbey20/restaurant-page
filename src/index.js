@@ -21,7 +21,7 @@ document.querySelectorAll('.header-list-item').forEach(item => {
     if (e.target.textContent == 'Home') {
       e.target.classList.add('active');
       removeAllChildNodes(content);
-      loadHome();
+      loadHome()
     }
     if (e.target.textContent == `Truffoni's`) {
       document.getElementById('home').classList.add('active');
@@ -52,7 +52,6 @@ function removeAllChildNodes(parent) {
 };
 
 function showNavbar() {
-  console.log('showing');
   const x = document.querySelector(".header-list");
   if (x.style.display === "flex") {
     x.style.display = "none";

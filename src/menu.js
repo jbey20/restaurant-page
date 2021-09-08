@@ -33,10 +33,11 @@ const loadMenu = () => {
       <hr>
       
       <h1><b>Cobb</b> <span class="right">$7.50</span></h1>
+      <span id="entrees"></span>
       <p class="">Garden salad with tomato, crisp bacon, frid chicken breast, eggs, avocado, chives, blue cheese, and red-wine vinaigrette.</p>
       <hr>
     
-    <h1 id="entrees" class="section-title">Entrees</h1>
+    <h1 class="section-title">Entrees</h1>
       <div class="">
     
       <h1><b>Cosmic Gumbo</b> <span class="right">$12.50</span></h1>
@@ -52,8 +53,6 @@ const loadMenu = () => {
     </div>
   </div> 
   `
-  const html = document.querySelector('html');
-  html.style.overflow = "scroll";
 }
 
 export {loadMenu};
